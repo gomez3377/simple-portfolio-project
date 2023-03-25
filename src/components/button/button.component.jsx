@@ -1,6 +1,8 @@
+import { StyledButton } from "./button.styles"
+
 const Button = ({children, otherProps}) => {
   return (
-    <button {...otherProps}>{children}</button>
+    <StyledButton {...otherProps}>{children}</StyledButton>
   )
 }
 
