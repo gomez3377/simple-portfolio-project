@@ -1,8 +1,9 @@
+import { ProfileImageContainer } from './profile-image.styled'
 import {ProfileDesktop, ProfileTablet, ProfileMobile} from './profile-images'
 
 const ProfileImage = () => {
   return (
-    <img src={ProfileDesktop} alt='profile-picture' />
+    <ProfileImageContainer src={ProfileDesktop} alt='profile-picture' />
   )
 }
 
