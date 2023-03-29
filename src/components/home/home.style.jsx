@@ -1,8 +1,8 @@
 import styled from 'styled-components'
 
 
-export const HomeContainer = styled.div`
-    max-width: 1110px;
-    margin: 0 auto;
-   
+export const HomeContainer = styled.main`
+background-color:${({theme:{colors}}) => colors.nearBlack};
+padding-bottom:139px;
+
 `

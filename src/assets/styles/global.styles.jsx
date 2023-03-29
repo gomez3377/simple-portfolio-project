@@ -9,7 +9,6 @@ export const GlobalStyle = createGlobalStyle`
 }
 
 body{
-    background-color:${({theme:{colors}}) => colors.nearBlack};
     font-family: "Space Grotesk";
     color:white;
 }
@@ -32,7 +31,6 @@ h3{
     font-size:24px;
     line-height:32px;
     font-family: "Space Grotesk Bold";
-    
 }
 p{
     font-size:18px;
@@ -41,5 +39,7 @@ p{
     
 
 }
+
+
 
 `

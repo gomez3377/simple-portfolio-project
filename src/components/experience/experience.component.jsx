@@ -1,11 +1,12 @@
 import SkillCard from "../skill-card/skill-card.component"
 import { skills } from "./experience-data"
+import { ExperienceContainer } from "./experience.styles"
 
 const Experience = () => {
   return (
-    <div>
+    <ExperienceContainer>
         {skills.map(skill => <SkillCard key={skill.id} skill={skill}  />)}
-    </div>
+    </ExperienceContainer>
   )
 }
 

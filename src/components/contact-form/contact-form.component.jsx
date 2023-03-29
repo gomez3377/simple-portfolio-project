@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import Button from '../button/button.component'
+import { ContactFormContainer } from './contact-form.styles'
 const defaultFormFields = {
     contactName:"",
     email:"",
@@ -28,15 +29,13 @@ const handleSubmit = () => {
 
 
   return (
-    <form onSubmit={handleSubmit}>
-        <label htmlFor="">Name</label>
-        <input type="text" name="contactName" value={contactName} onChange={onHandleChange} required/>
-        <label htmlFor="">Email</label>
-        <input type="email" name="email" value={email} onChange={onHandleChange} required />
-        <label htmlFor=''>Message</label>
-        <textarea name="message" value={message} cols="30" rows="10" onChange={onHandleChange}></textarea>
+    <ContactFormContainer onSubmit={handleSubmit}>
+       
+        <input type="text" name="contactName" value={contactName} onChange={onHandleChange} required placeholder='NAME'/>
+        <input type="email" name="email" value={email} onChange={onHandleChange} required placeholder='EMAIL' />
+        <textarea name="message" value={message} cols="30" rows="10" onChange={onHandleChange} placeholder='MESSAGE'></textarea>
         <Button type='submit'>Send Message</Button>
-    </form>
+    </ContactFormContainer>
   )
 }
 

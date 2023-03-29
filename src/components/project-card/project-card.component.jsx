@@ -1,18 +1,19 @@
 import React from 'react'
 import ProjectImage from '../project-image/project-image.component'
+import { ProjectCardContainer } from './project-card.styles'
 
 const ProjectCard = ({project}) => {
     const {projectName, languages, img} = project
   return (
-    <div>
+    <ProjectCardContainer>
         <ProjectImage img={img} />
         <div className="description">
-            <p>{projectName}</p>
+            <h3>{projectName}</h3>
             <div className="language-list">
             {languages.map((language, index) => <p key={index}>{language}</p>)}
             </div>
         </div>
-    </div>
+    </ProjectCardContainer>
   )
 }
 

@@ -8,5 +8,5 @@ top:0;
 right:0;
 width:445px;
 height:720px;
-z-index:-2;
+z-index:0;
 `
