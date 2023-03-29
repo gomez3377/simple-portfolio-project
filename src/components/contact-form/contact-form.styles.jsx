@@ -8,6 +8,12 @@ button{
     float:right;
 }
 input, textarea{
+    font-family:"Space Grotesk";
+    font-weight:500;
+    font-size:16px;
+    line-height:26px;
+    letter-spacing: -0.222222px;
+    text-transform:uppercase;
     background-color:transparent;
     margin-bottom:32px;
     display:block;
@@ -17,12 +23,20 @@ input, textarea{
     width:100%;
 }
 input{
-    
     padding-bottom:17px;
     padding-left:24px;
 }
+input:invalid{
+    border-bottom-color:${({theme:{colors}}) => colors.red};
+}
+input:valid{
+    border-bottom-color: ${({theme:{colors}}) => colors.green}
+}
+
+
+
+
 textarea{
-    font-family:"Space Grotesk";
     padding-left:24px;
     resize:none;
     height:107px;

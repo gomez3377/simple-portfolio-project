@@ -1,18 +1,31 @@
 import styled from 'styled-components'
+import { device } from '../../screen-sizes'
 
 
 export const HeaderContainer = styled.header`
 background-color:${({theme:{colors}}) => colors.nearBlack};
 position:relative;
 margin: 0 auto;
-    max-width: 1110px;
+max-width: 1110px;
 nav{
     position:absolute;
-    width:1080.49px;
+    min-width:1080.49px;
     margin-top:39px;
     z-index:1;
     
 }
+
+@media ${device.tablet}{
+    width:100%
+    nav{
+        min-width:708.49px;
+    }
+
+
+
+}
+
+
 
 
 `
@@ -22,6 +35,11 @@ export const Hero = styled.div`
 position:relative;
 height:720px;
 margin-bottom:104px;
+@media ${device.tablet}{
+    height:600px;
+    margin-bottom:60px;
+}
+
 `
 export const BioContainer = styled.div`
 top:127px;
