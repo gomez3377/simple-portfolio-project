@@ -9,6 +9,9 @@ padding-bottom:139px;
 @media ${device.tablet} {
     padding-bottom:100px;
 }
+@media ${device.mobile} {
+    padding-bottom:80px;
+}
 
 
 `

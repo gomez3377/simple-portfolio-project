@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-
+import { device } from '../../screen-sizes'
 
 export const ProjectCardContainer = styled.div`
 width:540px;
@@ -17,5 +17,11 @@ img{
         justify-content:space-between;
     }
 }
+
+@media ${device.tablet}{
+width:342px;
+
+}
+
 `
 

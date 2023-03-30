@@ -1,5 +1,5 @@
 import { createGlobalStyle } from "styled-components";
-
+import { device } from "../../screen-sizes";
 
 export const GlobalStyle = createGlobalStyle`
 *{
@@ -39,7 +39,22 @@ p{
     
 
 }
+@media ${device.tablet}{
+h1{
+    font-size:72px;
+    line-height:72px;
 
+}
+}
 
-
-`
+@media ${device.mobile}{
+    h1{
+        font-size: 40px;
+        line-height: 40px;
+        letter-spacing: -1.13636px;
+    }
+    p{
+    font-size: 16px;
+line-height: 26px;
+    }
+`;

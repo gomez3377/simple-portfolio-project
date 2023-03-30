@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import { device } from '../../screen-sizes'
 
 
 
@@ -41,5 +42,11 @@ textarea{
     resize:none;
     height:107px;
 
+}
+
+@media ${device.tablet}{
+    margin:0 auto;
+    margin-top:42px;
+    margin-bottom:92px;
 }
 `
